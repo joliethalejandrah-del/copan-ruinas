@@ -1,0 +1,1215 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+
+/* =========================================
+   FONDO FIJO DE TODA LA PÁGINA
+========================================= */
+
+
+html, body{
+
+    background:url('img/fondo.png') no-repeat center center fixed;
+
+    background-size:cover;
+
+}
+
+
+
+/* =========================================
+            PORTADA HERO
+========================================= */
+
+
+.hero{
+
+    height:100vh;
+
+    position:relative;
+
+}
+
+
+
+/* =========================================
+              MENÚ LATERAL
+========================================= */
+
+
+.sidebar{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    background:rgba(0,0,0,0.65);
+
+    padding:20px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(212,175,55,0.5);
+
+    backdrop-filter:blur(5px);
+
+}
+
+
+
+/* LOGO */
+
+.logo{
+
+    width:100px;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+
+/* LISTA */
+
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin-top:20px;
+
+}
+
+
+
+.sidebar li{
+
+    margin:15px 0;
+
+}
+
+
+
+/* ENLACES */
+
+
+.sidebar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    transition:.4s ease;
+
+}
+
+
+
+.sidebar a:hover{
+
+    color:#f0c040;
+
+    padding-left:8px;
+
+}
+
+
+
+/* =========================================
+              TITULO PRINCIPAL
+========================================= */
+
+
+.titulo{
+
+    position:absolute;
+
+    top:45%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+    animation:latido 2.5s infinite;
+
+}
+
+
+
+/* ANIMACIÓN COMO LATIDO */
+
+@keyframes latido{
+
+
+0%{
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
+
+25%{
+
+    transform:translate(-50%,-50%) scale(1.06);
+
+}
+
+
+50%{
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
+
+75%{
+
+    transform:translate(-50%,-50%) scale(1.06);
+
+}
+
+
+100%{
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
+
+}
+
+
+
+/* TEXTO COPÁN RUINAS */
+
+
+.titulo h1{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:120px;
+
+    color:white;
+
+
+    text-shadow:
+
+    0 0 5px #ffd700,
+
+    0 0 10px #ffd700,
+
+    0 0 20px #d4af37,
+
+    0 0 35px #d4af37,
+
+    2px 2px 8px rgba(0,0,0,.9);
+
+}
+
+
+
+/* =========================================
+              SUBTÍTULO
+========================================= */
+
+
+.titulo p{
+
+
+    font-family:'Cinzel',serif;
+
+
+    font-size:22px;
+
+
+    font-weight:900;
+
+
+    color:#f0c040;
+
+
+    letter-spacing:2px;
+
+
+    text-transform:uppercase;
+
+
+    margin-top:20px;
+
+
+    text-shadow:
+
+    2px 2px 5px black;
+
+
+}
+
+/* =========================================
+        CUADROS PRINCIPALES
+========================================= */
+
+
+.cuadro{
+
+    width:85%;
+
+    margin:60px auto;
+
+    padding:40px;
+
+
+    background:rgba(0,0,0,0.95);
+
+
+    border:2px solid #d4af37;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 0 20px rgba(212,175,55,.25);
+
+
+    transition:.5s ease;
+
+}
+
+
+
+.cuadro:hover{
+
+    box-shadow:
+
+    0 0 30px rgba(212,175,55,.45);
+
+}
+
+
+
+/* =========================================
+          TITULOS DE SECCIONES
+========================================= */
+
+
+.cuadro h2{
+
+    font-family:'Great Vibes',cursive;
+
+
+    text-align:center;
+
+
+    color:#f0c040;
+
+
+    font-size:45px;
+
+
+    margin-bottom:35px;
+
+
+    text-shadow:
+
+    0 0 10px rgba(240,192,64,.6);
+
+}
+
+
+
+/* =========================================
+              CONTENIDO
+========================================= */
+
+
+.contenido{
+
+    display:flex;
+
+
+    gap:35px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+/* IMÁGENES HISTORIA Y CULTURA */
+
+
+.contenido img{
+
+
+    width:350px;
+
+
+    height:300px;
+
+
+    object-fit:cover;
+
+
+    border-radius:15px;
+
+
+    border:2px solid #d4af37;
+
+
+    box-shadow:
+
+    0 0 20px rgba(0,0,0,.8);
+
+
+}
+
+
+
+/* =========================================
+              TEXTOS
+========================================= */
+
+
+.texto-mejorado{
+
+
+    flex:1;
+
+
+    line-height:2;
+
+
+    text-align:justify;
+
+
+    font-size:16px;
+
+
+    color:white;
+
+
+}
+
+
+
+/* =========================================
+          TARJETAS TURÍSTICAS
+========================================= */
+
+
+.cards{
+
+
+    display:flex;
+
+
+    flex-wrap:wrap;
+
+
+    justify-content:center;
+
+
+    gap:25px;
+
+
+}
+
+
+
+/* TARJETA */
+
+
+.card{
+
+
+    width:230px;
+
+
+    height:170px;
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+    border-radius:15px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    text-decoration:none;
+
+
+    border:2px solid #d4af37;
+
+
+    transition:.5s ease;
+
+
+}
+
+
+
+/* CAPA OSCURA */
+
+
+.card::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:rgba(0,0,0,.35);
+
+
+    transition:.5s ease;
+
+
+}
+
+
+
+/* TEXTO DE TARJETA */
+
+
+.card span{
+
+
+    position:absolute;
+
+
+    bottom:15px;
+
+
+    width:100%;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    font-family:'Cinzel',serif;
+
+
+    font-size:20px;
+
+
+    font-weight:bold;
+
+
+    z-index:2;
+
+
+    text-shadow:
+
+    2px 2px 5px black;
+
+
+}
+
+
+
+/* EFECTO AL PASAR MOUSE */
+
+
+.card:hover{
+
+
+    transform:translateY(-12px) scale(1.05);
+
+
+    box-shadow:
+
+    0 15px 30px rgba(212,175,55,.5);
+
+
+}
+
+
+
+/* ACLARA IMAGEN */
+
+
+.card:hover::before{
+
+
+    background:rgba(0,0,0,.15);
+
+
+}
+
+/* =========================================
+              GALERÍA
+========================================= */
+
+
+.galeria{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    position:relative;
+
+}
+
+
+
+/* CONTENEDOR DE IMAGEN */
+
+.galeria img{
+
+    width:900px;
+
+    height:550px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+
+    border:2px solid #d4af37;
+
+
+    box-shadow:
+
+    0 0 25px rgba(0,0,0,.8);
+
+
+    transition:opacity .8s ease;
+
+
+}
+
+
+
+/* =========================================
+              BOTONES FLECHA
+========================================= */
+
+
+.flecha{
+
+
+    background:#f0c040;
+
+
+    color:black;
+
+
+    border:none;
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    border-radius:50%;
+
+
+    font-size:30px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:.4s ease;
+
+
+}
+
+
+
+.flecha:hover{
+
+
+    transform:scale(1.15);
+
+
+    background:#ffd700;
+
+
+    box-shadow:
+
+    0 0 20px #f0c040;
+
+
+}
+
+
+
+/* =========================================
+              CONTACTO
+========================================= */
+
+
+.contacto{
+
+    text-align:center;
+
+}
+
+
+
+.mensaje-contacto{
+
+
+    font-size:18px;
+
+
+    line-height:1.8;
+
+
+    max-width:800px;
+
+
+    margin:auto;
+
+
+    color:white;
+
+
+}
+
+
+
+
+/* =========================================
+              WHATSAPP
+========================================= */
+
+
+.whatsapp{
+
+
+    display:inline-block;
+
+
+    margin-top:30px;
+
+
+    padding:15px 35px;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    font-family:'Poppins',sans-serif;
+
+
+    font-weight:bold;
+
+
+    border-radius:30px;
+
+
+    transition:.4s ease;
+
+
+    box-shadow:
+
+    0 0 15px rgba(37,211,102,.5);
+
+
+}
+
+
+
+.whatsapp:hover{
+
+
+    transform:scale(1.08);
+
+
+    box-shadow:
+
+    0 0 30px rgba(37,211,102,.9);
+
+
+}
+
+
+
+/* =========================================
+              COPYRIGHT
+========================================= */
+
+
+.copy{
+
+
+    margin-top:30px;
+
+
+    font-size:14px;
+
+
+    opacity:.8;
+
+
+}
+
+
+
+
+/* =========================================
+              ANIMACIÓN DE APARICIÓN
+========================================= */
+
+
+.cuadro{
+
+
+    animation:aparecer 1s ease;
+
+
+}
+
+
+
+@keyframes aparecer{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+/* =========================================
+              RESPONSIVE CELULARES
+========================================= */
+
+
+@media(max-width:900px){
+
+
+
+.sidebar{
+
+
+    position:relative;
+
+
+    top:20px;
+
+
+    left:0;
+
+
+    width:90%;
+
+
+    margin:auto;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+.titulo h1{
+
+
+    font-size:70px;
+
+
+}
+
+
+
+.titulo p{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+.cuadro{
+
+
+    width:92%;
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+.contenido{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.contenido img{
+
+
+    width:100%;
+
+
+    height:auto;
+
+
+}
+
+
+
+.galeria img{
+
+
+    width:100%;
+
+
+    height:350px;
+
+
+}
+
+
+
+.flecha{
+
+
+    width:45px;
+
+
+    height:45px;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+.cards{
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.card{
+
+
+    width:90%;
+
+
+}
+
+
+
+}
+
+/* =========================================
+        RESPONSIVE PARA CELULARES
+   (No modifica la versión de computadora)
+========================================= */
+
+@media screen and (max-width: 768px){
+
+    /* Hero */
+    .hero{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+    }
+
+    /* Menú */
+    .sidebar{
+
+        position:fixed;
+
+        top:10px;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+        width:95%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        z-index:999;
+
+        padding:15px;
+    }
+
+    .logo{
+        width:70px;
+        margin-bottom:10px;
+    }
+
+    .sidebar ul{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:12px;
+
+        margin-top:10px;
+    }
+
+    .sidebar li{
+        margin:0;
+    }
+
+    .sidebar a{
+        font-size:14px;
+    }
+
+    /* Título principal */
+
+    .titulo{
+
+        width:95%;
+
+        padding-top:120px;
+    }
+
+    .titulo h1{
+
+        font-size:62px;
+
+        line-height:1;
+    }
+
+    .titulo p{
+
+        font-size:16px;
+
+        margin-top:15px;
+
+        line-height:1.5;
+
+        letter-spacing:1px;
+    }
+
+    /* Cuadros */
+
+    .cuadro{
+
+        width:95%;
+
+        padding:20px;
+
+        margin:35px auto;
+    }
+
+    .cuadro h2{
+
+        font-size:38px;
+    }
+
+    /* Historia y Cultura */
+
+    .contenido{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .contenido img{
+
+        width:100%;
+
+        height:auto;
+
+        max-width:500px;
+    }
+
+    .texto-mejorado{
+
+        font-size:16px;
+
+        line-height:1.9;
+
+        text-align:justify;
+    }
+
+    /* Tarjetas */
+
+    .cards{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .card{
+
+        width:100%;
+
+        max-width:350px;
+
+        height:220px;
+    }
+
+    /* Galería */
+
+    .galeria{
+
+        gap:10px;
+    }
+
+    .galeria img{
+
+        width:100%;
+
+        height:260px;
+
+        object-fit:cover;
+    }
+
+    .flecha{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:22px;
+    }
+
+    /* Contacto */
+
+    .mensaje-contacto{
+
+        font-size:16px;
+    }
+
+    .whatsapp{
+
+        width:100%;
+
+        max-width:320px;
+
+        font-size:18px;
+
+        padding:15px;
+    }
+
+    .copy{
+
+        font-size:13px;
+    }
+
+}
