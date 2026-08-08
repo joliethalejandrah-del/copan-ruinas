@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Las Sepulturas</title>
 
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
 
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="script.js" defer></script>
+    <title>Las Sepulturas</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- JAVASCRIPT UNIVERSAL -->
+    <script src="script.js" defer></script>
 
 </head>
 
-<section class="cuadro">
-  <h2>Las Sepulturas</h2>
+<body>
 
-  <div class="contenido">
-    <img src="img/sepulturas.jpeg" alt="">
-    
-   <section id="cultura" class="cuadro">
+    <!-- =========================================
+              Las Sepulturas
+    ========================================== -->
+
+    <section class="cuadro">
+
+        <h2>Las Sepulturas</h2>
+
+        <div class="contenido">
+
+            <!-- IMAGEN PRINCIPAL -->
+
+            <img
+                src="img/sepulturas.jpeg"
+                alt="Sepulturas">
+
+            <!-- INFORMACIÓN -->
 
             <p class="texto-mejorado">
 
-                El sitio arqueológico de Los Sepulturas, ubicado a aproximadamente un kilómetro y medio al este del Grupo Principal de Copán Ruinas, constituye el complejo residencial periférico más importante descubierto en el valle y una ventana única hacia la estructura social de la antigua civilización maya. Este asentamiento satélite, que estuvo densamente poblado durante el período Clásico Tardío, no funcionaba como un centro de pirámides ceremoniales, sino como el barrio privado donde habitaba la élite política, los nobles cortesanos, los científicos, los sacerdotes y la prestigiosa casta de los escribas reales. 
-                <br><br>
+              El sitio arqueológico de Los Sepulturas, ubicado a aproximadamente un kilómetro y medio al este del Grupo Principal de Copán Ruinas, constituye el complejo residencial periférico más importante descubierto en el valle y una ventana única hacia la estructura social de la antigua civilización maya. Este asentamiento satélite, que estuvo densamente poblado durante el período Clásico Tardío, no funcionaba como un centro de pirámides ceremoniales, sino como el barrio privado donde habitaba la élite política, los nobles cortesanos, los científicos, los sacerdotes y la prestigiosa casta de los escribas reales. 
+                
+              <br><br>
+
+                </p>
+
+            </div>
 
         </div>
 
     </section>
 
-        <!-- ========================= -->
-    <!--         GALERÍA           -->
-    <!-- ========================= -->
+
+    <!-- =========================================
+                    GALERÍA
+    ========================================== -->
 
     <section id="galeria" class="cuadro">
 
@@ -39,42 +65,46 @@
 
         <div class="galeria">
 
-            <div class="galeria">
+            <!-- BOTÓN ANTERIOR -->
 
-    <button class="flecha" onclick="atras()">
-        &#10094;
-    </button>
+            <button
+                class="flecha"
+                onclick="atras()">
 
-    <img
-      <img
-    id="slide"
-    src="img/sepulturas1.jpeg"
-    data-prefijo="sepulturas"
-    data-total="6"
-    data-extension="jpeg">
+                &#10094;
 
-    <button class="flecha" onclick="siguiente()">
-        &#10095;
-    </button>
+            </button>
 
-</div>
-           
+
+            <!-- IMAGEN DEL CARRUSEL -->
+
+            <img
+                id="slide"
+                src="img/sepulturas1.jpeg"
+                data-prefijo="sepulturas"
+                data-total="10"
+                data-extension="jpeg"
+                alt="Galería de sepulturas">
+
+
+            <!-- BOTÓN SIGUIENTE -->
+
+            <button
+                class="flecha"
+                onclick="siguiente()">
+
+                &#10095;
+
+            </button>
 
         </div>
 
     </section>
 
 
-
-  </div>
-
-</section>
-
- </section>
-
-    <!-- ========================= -->
-    <!--         CONTACTO          -->
-    <!-- ========================= -->
+    <!-- =========================================
+                    CONTACTO
+    ========================================== -->
 
     <footer id="contacto" class="cuadro contacto">
 
@@ -93,6 +123,7 @@
 
         </p>
 
+
         <a
             class="whatsapp"
             href="https://wa.me/50496079579"
@@ -101,6 +132,7 @@
             Escríbenos por WhatsApp
 
         </a>
+
 
         <p class="copy">
 
@@ -111,5 +143,5 @@
     </footer>
 
 </body>
+
 </html>
-  Luna Jaguar
