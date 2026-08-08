@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Templo Rosalila</title>
 
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
 
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="script.js" defer></script>
+    <title>Templo Rosalila</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- JAVASCRIPT UNIVERSAL -->
+    <script src="script.js" defer></script>
 
 </head>
 
-<section class="cuadro">
-  <h2>Templo Rosalila</h2>
+<body>
 
-  <div class="contenido">
-    <img src="img/templorosalila.jpeg" alt="">
-    
-   <section id="cultura" class="cuadro">
+    <!-- =========================================
+              Templo Rosalila
+    ========================================== -->
+
+    <section class="cuadro">
+
+        <h2>Templo Rosalila</h2>
+
+        <div class="contenido">
+
+            <!-- IMAGEN PRINCIPAL -->
+
+            <img
+                src="img/templorosalila.jpeg"
+                alt="Templo Rosalila">
+
+            <!-- INFORMACIÓN -->
 
             <p class="texto-mejorado">
 
                 El Templo Rosalila, descubierto intacto en 1989 por el arqueólogo hondureño Ricardo Agurcia Fasquelle, representa uno de los hitos más deslumbrantes de la arqueología maya a nivel mundial. Esta joya arquitectónica fue edificada en el año 571 d.C. bajo el encargo del décimo gobernante de Copán, conocido como Luna Jaguar, para servir como un santuario religioso de adoración y un monumento de veneración al primer rey y fundador de la dinastía, K'inich Yax K'uk' Mo'. A diferencia de la práctica común en la que los edificios antiguos eran demolidos sistemáticamente para levantar nuevas plataformas encima, los mayas de Copán consideraron a Rosalila un templo tan sagrado que decidieron "enterrarlo" con extremo cuidado. El edificio fue envuelto en un manto de mortero blanco y rellenado minuciosamente con tierra y piedra, lo que sirvió como el núcleo estructural de la colosal Pirámide 16 y permitió que la edificación sobreviviera al paso de los siglos intacta.
+                
                 <br><br>
 
+                </p>
+
+            </div>
 
         </div>
 
     </section>
 
-        <!-- ========================= -->
-    <!--         GALERÍA           -->
-    <!-- ========================= -->
+
+    <!-- =========================================
+                    GALERÍA
+    ========================================== -->
 
     <section id="galeria" class="cuadro">
 
@@ -40,42 +65,46 @@
 
         <div class="galeria">
 
-            <div class="galeria">
+            <!-- BOTÓN ANTERIOR -->
 
-    <button class="flecha" onclick="atras()">
-        &#10094;
-    </button>
+            <button
+                class="flecha"
+                onclick="atras()">
 
-    <img
-        id="slide"
-        src="img/rosalila1.jpeg"
-        data-prefijo="rosalila"
-        data-total="10"
-        data-extension="jpeg"
-        alt="Templo Rosalila">
+                &#10094;
 
-    <button class="flecha" onclick="siguiente()">
-        &#10095;
-    </button>
+            </button>
 
-</div>
-           
+
+            <!-- IMAGEN DEL CARRUSEL -->
+
+            <img
+                id="slide"
+                src="img/rosalila1.jpeg"
+                data-prefijo="parque"
+                data-total="10"
+                data-extension="jpeg"
+                alt="Galería Templo Rosalila">
+
+
+            <!-- BOTÓN SIGUIENTE -->
+
+            <button
+                class="flecha"
+                onclick="siguiente()">
+
+                &#10095;
+
+            </button>
 
         </div>
 
     </section>
 
 
-
-  </div>
-
-</section>
-
- </section>
-
-    <!-- ========================= -->
-    <!--         CONTACTO          -->
-    <!-- ========================= -->
+    <!-- =========================================
+                    CONTACTO
+    ========================================== -->
 
     <footer id="contacto" class="cuadro contacto">
 
@@ -94,6 +123,7 @@
 
         </p>
 
+
         <a
             class="whatsapp"
             href="https://wa.me/50496079579"
@@ -102,6 +132,7 @@
             Escríbenos por WhatsApp
 
         </a>
+
 
         <p class="copy">
 
@@ -112,4 +143,10 @@
     </footer>
 
 </body>
+
 </html>
+
+
+
+
+        
