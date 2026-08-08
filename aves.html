@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Parque De Aves</title>
 
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
 
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="script.js" defer></script>
+    <title>Parque De Aves</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- JAVASCRIPT UNIVERSAL -->
+    <script src="script.js" defer></script>
 
 </head>
 
-<section class="cuadro">
-  <h2>Parque De Aves</h2>
+<body>
 
-  <div class="contenido">
-    <img src="img/parqueaves.jpeg" alt="">
-    
-   <section id="cultura" class="cuadro">
+    <!-- =========================================
+              Parque De Aves
+    ========================================== -->
+
+    <section class="cuadro">
+
+        <h2>Parque De Aves</h2>
+
+        <div class="contenido">
+
+            <!-- IMAGEN PRINCIPAL -->
+
+            <img
+                src="img/parqueaves.jpeg"
+                alt="Templo Rosalila">
+
+            <!-- INFORMACIÓN -->
 
             <p class="texto-mejorado">
 
-                El Parque de Aves Macaw Mountain, fundado originalmente por el conservacionista Lloyd Davidson en la década de 1990 y trasladado a su ubicación actual en 2001, representa un pilar fundamental para el ecoturismo y la educación ambiental en el occidente de Honduras. Este santuario natural privado opera principalmente como un centro de rescate, rehabilitación y reproducción de especies de aves coloniales americanas que han sido confiscadas del comercio ilegal de fauna o donadas por dueños que ya no podían cuidarlas. El terreno abarca una reserva biológica de aproximadamente cinco hectáreas inmersa en un cañón arbolado, donde el follaje denso de árboles centenarios como el cedro y la ceiba proporciona un hábitat sombreado y fresco, cruzado por el cauce natural de un río cristalino que mantiene la humedad óptima para las aves tropicales.
+            Nuestro equipo estará encantado de ayudarte a organizar tu visita a
+            Copán Ruinas, brindándote información sobre recorridos, lugares
+            turísticos y todo lo necesario para que disfrutes una experiencia
+            inolvidable.
+
+              
                 <br><br>
+
+                </p>
+
+            </div>
 
         </div>
 
     </section>
 
-        <!-- ========================= -->
-    <!--         GALERÍA           -->
-    <!-- ========================= -->
+
+    <!-- =========================================
+                    GALERÍA
+    ========================================== -->
 
     <section id="galeria" class="cuadro">
 
@@ -39,42 +69,46 @@
 
         <div class="galeria">
 
-            <div class="galeria">
+            <!-- BOTÓN ANTERIOR -->
 
-    <button class="flecha" onclick="atras()">
-        &#10094;
-    </button>
+            <button
+                class="flecha"
+                onclick="atras()">
 
-    <img
-        <img
-    id="slide"
-    src="img/aves1.jpeg"
-    data-prefijo="aves"
-    data-total="7"
-    data-extension="jpeg">
+                &#10094;
 
-    <button class="flecha" onclick="siguiente()">
-        &#10095;
-    </button>
+            </button>
 
-</div>
-           
+
+            <!-- IMAGEN DEL CARRUSEL -->
+
+            <img
+                id="slide"
+                src="img/aves1.jpeg"
+                data-prefijo="parque"
+                data-total="10"
+                data-extension="jpeg"
+                alt="Galería Templo Rosalila">
+
+
+            <!-- BOTÓN SIGUIENTE -->
+
+            <button
+                class="flecha"
+                onclick="siguiente()">
+
+                &#10095;
+
+            </button>
 
         </div>
 
     </section>
 
 
-
-  </div>
-
-</section>
-
- </section>
-
-    <!-- ========================= -->
-    <!--         CONTACTO          -->
-    <!-- ========================= -->
+    <!-- =========================================
+                    CONTACTO
+    ========================================== -->
 
     <footer id="contacto" class="cuadro contacto">
 
@@ -93,6 +127,7 @@
 
         </p>
 
+
         <a
             class="whatsapp"
             href="https://wa.me/50496079579"
@@ -101,6 +136,7 @@
             Escríbenos por WhatsApp
 
         </a>
+
 
         <p class="copy">
 
@@ -111,4 +147,9 @@
     </footer>
 
 </body>
+
 </html>
+
+
+
+       
