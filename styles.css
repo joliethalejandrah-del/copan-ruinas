@@ -1213,3 +1213,245 @@ to{
     }
 
 }
+
+/* =====================================================
+   ADAPTACIÓN PROFESIONAL PARA CELULARES
+   PÁGINA PRINCIPAL + TODAS LAS PÁGINAS INTERNAS
+===================================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* =================================================
+       CUADROS PRINCIPALES
+    ================================================= */
+
+    .cuadro {
+        width: 94%;
+        margin: 35px auto;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+
+    /* =================================================
+       TÍTULOS DE LAS PÁGINAS
+    ================================================= */
+
+    .cuadro h2 {
+        font-size: 38px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+
+    /* =================================================
+       CONTENIDO DE HISTORIA, CULTURA Y PÁGINAS INTERNAS
+    ================================================= */
+
+    .contenido {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        width: 100%;
+
+        gap: 25px;
+
+    }
+
+
+    /* =================================================
+       IMÁGENES DE HISTORIA, CULTURA Y PÁGINAS INTERNAS
+    ================================================= */
+
+    .contenido > img {
+
+        display: block;
+
+        width: 100%;
+
+        max-width: 600px;
+
+        height: auto;
+
+        object-fit: cover;
+
+        margin: 0 auto;
+
+        border-radius: 15px;
+
+    }
+
+
+    /* =================================================
+       TEXTO
+    ================================================= */
+
+    .texto-mejorado {
+
+        width: 100%;
+
+        font-size: 16px;
+
+        line-height: 1.8;
+
+        text-align: justify;
+
+        margin: 0;
+
+    }
+
+
+    /* =================================================
+       CORRECCIÓN PARA LAS PÁGINAS INTERNAS
+       COMO PARQUE, ROSALILA, AVES, JAGUAR Y SEPULTURAS
+    ================================================= */
+
+    .contenido > .cuadro {
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 0;
+
+        background: transparent;
+
+        border: none;
+
+        box-shadow: none;
+
+        border-radius: 0;
+
+    }
+
+
+    /* =================================================
+       TEXTO DENTRO DE LAS PÁGINAS INTERNAS
+    ================================================= */
+
+    .contenido > .cuadro .texto-mejorado {
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+
+    /* =================================================
+       GALERÍA
+    ================================================= */
+
+    .galeria {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        width: 100%;
+
+        gap: 8px;
+
+    }
+
+
+    .galeria img {
+
+        width: calc(100% - 90px);
+
+        height: 260px;
+
+        object-fit: cover;
+
+        border-radius: 15px;
+
+    }
+
+
+    /* =================================================
+       BOTONES DE GALERÍA
+    ================================================= */
+
+    .flecha {
+
+        flex-shrink: 0;
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 20px;
+
+    }
+
+
+    /* =================================================
+       TARJETAS TURÍSTICAS
+    ================================================= */
+
+    .cards {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+
+        gap: 20px;
+
+    }
+
+
+    .card {
+
+        width: 100%;
+
+        max-width: 350px;
+
+        height: 210px;
+
+    }
+
+
+    /* =================================================
+       CONTACTO
+    ================================================= */
+
+    .mensaje-contacto {
+
+        width: 100%;
+
+        font-size: 16px;
+
+        line-height: 1.8;
+
+        text-align: center;
+
+    }
+
+
+    .whatsapp {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        padding: 15px 20px;
+
+        font-size: 17px;
+
+    }
+
+}
