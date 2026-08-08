@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Parque Arqueológico</title>
 
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
 
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="script.js" defer></script>
+    <title>Parque Arqueológico</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- JAVASCRIPT UNIVERSAL -->
+    <script src="script.js" defer></script>
 
 </head>
 
-<section class="cuadro">
-  <h2>Parque Arqueológico</h2>
+<body>
 
-  <div class="contenido">
-    <img src="img/parque.jpeg" alt="">
-    
-   <section id="cultura" class="cuadro">
+    <!-- =========================================
+              PARQUE ARQUEOLÓGICO
+    ========================================== -->
 
-         <section class="cuadro">
+    <section class="cuadro">
 
-    <h2>Parque Arqueológico</h2>
+        <h2>Parque Arqueológico</h2>
 
-    <div class="contenido">
+        <div class="contenido">
 
-        <img src="img/parque.jpeg" alt="Parque Arqueológico">
+            <!-- IMAGEN PRINCIPAL -->
 
-        <p class="texto-mejorado">
+            <img
+                src="img/parque.jpeg"
+                alt="Parque Arqueológico de Copán">
 
-            El Parque Arqueológico de Copán representa el corazón
-            monumental y político de esta antigua civilización en Honduras.
+            <!-- INFORMACIÓN -->
 
-            <br><br>
+            <div class="texto-mejorado">
 
-            Al caminar por su plaza principal, los visitantes pueden
-            observar las impresionantes estelas, templos y monumentos
-            construidos por los antiguos habitantes de Copán.
+                <p>
 
-            <br><br>
+                    El Parque Arqueológico de Copán representa el corazón monumental y político de esta antigua civilización en Honduras, siendo reconocido mundialmente por el asombroso nivel de detalle en sus esculturas barrocas de piedra caliza. Al caminar por su plaza principal, los visitantes se encuentran rodeados de imponentes estelas tridimensionales que retratan a los antiguos gobernantes de la dinastía Yax Kuk Mo. El circuito ceremonial conecta de forma fluida con el majestuoso Campo de Pelota y la célebre Escalinata de los Jeroglíficos, una estructura monumental que resguarda el texto glífico continuo más extenso de toda Mesoamérica, narrando las crónicas de la realeza maya para la posteridad.
 
-            La Escalinata de los Jeroglíficos constituye uno de los
-            monumentos más importantes del sitio arqueológico.
+                </p>
 
-        </p>
+                <p>
 
-    </div>
+                    Oculto bajo las capas de la historia se encuentra el Templo Rosalila, un santuario sagrado edificado en el año 571 d.C. que destaca como uno de los hallazgos más extraordinarios de la arqueología americana. A diferencia de otras estructuras que eran destruidas para construir nuevas plataformas encima, los antiguos mayas cubrieron cuidadosamente a Rosalila con capas de estuco para preservarlo intacto. Aunque el templo real permanece sellado bajo la acrópolis para garantizar su conservación absoluta, los viajeros pueden admirar su magnificencia en el Museo de la Escultura Maya, donde se levanta una réplica exacta a escala real que exhibe los vivos colores rojos, verdes y amarillos minerales de la época clásica.
 
-</section>
+                </p>
+
+            </div>
 
         </div>
 
     </section>
 
-        <!-- ========================= -->
-    <!--         GALERÍA           -->
-    <!-- ========================= -->
+
+    <!-- =========================================
+                    GALERÍA
+    ========================================== -->
 
     <section id="galeria" class="cuadro">
 
@@ -64,42 +71,46 @@
 
         <div class="galeria">
 
-            <div class="galeria">
+            <!-- BOTÓN ANTERIOR -->
 
-    <button class="flecha" onclick="atras()">
-        &#10094;
-    </button>
+            <button
+                class="flecha"
+                onclick="atras()">
 
-    <img
-        id="slide"
-        src="img/parque1.jpeg"
-        data-prefijo="parque"
-        data-total="10"
-        data-extension="jpeg"
-        alt="Galería Parque Arqueológico">
+                &#10094;
 
-    <button class="flecha" onclick="siguiente()">
-        &#10095;
-    </button>
+            </button>
 
-</div>
-           
+
+            <!-- IMAGEN DEL CARRUSEL -->
+
+            <img
+                id="slide"
+                src="img/parque1.jpeg"
+                data-prefijo="parque"
+                data-total="10"
+                data-extension="jpeg"
+                alt="Galería Parque Arqueológico">
+
+
+            <!-- BOTÓN SIGUIENTE -->
+
+            <button
+                class="flecha"
+                onclick="siguiente()">
+
+                &#10095;
+
+            </button>
 
         </div>
 
     </section>
 
 
-
-  </div>
-
-</section>
-
- </section>
-
-    <!-- ========================= -->
-    <!--         CONTACTO          -->
-    <!-- ========================= -->
+    <!-- =========================================
+                    CONTACTO
+    ========================================== -->
 
     <footer id="contacto" class="cuadro contacto">
 
@@ -118,6 +129,7 @@
 
         </p>
 
+
         <a
             class="whatsapp"
             href="https://wa.me/50496079579"
@@ -126,6 +138,7 @@
             Escríbenos por WhatsApp
 
         </a>
+
 
         <p class="copy">
 
@@ -136,4 +149,5 @@
     </footer>
 
 </body>
+
 </html>
